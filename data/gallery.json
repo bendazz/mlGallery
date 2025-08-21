@@ -1,9 +1,21 @@
 {
   "topics": [
     {
-      "title": "Slope and Intercept",
+      "title": "Centroid",
       "apps": [
-        "https://meercat33.github.io/slope/"
+        "https://danilo1111111111.github.io/centroid/"
+      ]
+    }
+    {
+      "title": "2D Clustering",
+      "apps": [
+        "https://corinnebechtold2020.github.io/kmeans/"
+      ]
+    }
+    {
+      "title": "3D Clustering",
+      "apps": [
+        "https://mattepstein-u.github.io/K-Means-3D/"
       ]
     }
     
