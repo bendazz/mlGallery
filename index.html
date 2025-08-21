@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Science App Gallery</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1 class="title">Mathematics for Data Science Gallery</h1>
+    </header>
+
+    <main class="layout">
+      <aside id="sidebar" class="sidebar" aria-label="Topics menu">
+        <div class="sidebar-inner">
+          <input id="search" class="search" type="search" placeholder="Search topics and apps…" aria-label="Search" />
+          <nav id="menu" class="menu" aria-label="Gallery navigation">
+            <!-- Populated by script.js -->
+          </nav>
+        </div>
+      </aside>
+
+      <section class="viewer">
+        <div class="viewer-header">
+          <div class="viewer-meta">
+            <div id="breadcrumb" class="breadcrumb" aria-live="polite"></div>
+          </div>
+          <div class="viewer-actions">
+            <a id="openNewTab" class="btn" href="#" target="_blank" rel="noopener">Open in new tab ↗</a>
+          </div>
+        </div>
+        <div id="message" class="message">
+          <p>
+            Select an app from the left to load it here. If an app doesn't display
+            due to embedding restrictions, use the "Open in new tab" button.
+          </p>
+        </div>
+        <iframe
+          id="viewer"
+          class="iframe"
+          title="App viewer"
+          src="about:blank"
+          sandbox="allow-scripts allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox"
+        ></iframe>
+      </section>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
